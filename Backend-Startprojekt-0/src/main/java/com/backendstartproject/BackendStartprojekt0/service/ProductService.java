@@ -1,26 +1,17 @@
 package com.backendstartproject.BackendStartprojekt0.service;
 
-import com.backendstartproject.BackendStartprojekt0.controller.ProductController;
 import com.backendstartproject.BackendStartprojekt0.model.Location;
 import com.backendstartproject.BackendStartprojekt0.model.Product;
 import com.backendstartproject.BackendStartprojekt0.repository.ProductRepository;
 import com.github.javafaker.Faker;
-import com.mongodb.DB;
-import com.mongodb.client.MongoClient;
-import com.mongodb.client.MongoDatabase;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.mongodb.core.MongoTemplate;
-import org.springframework.data.mongodb.repository.Query;
 import org.springframework.stereotype.Service;
-import java.nio.charset.Charset;
-import java.nio.charset.StandardCharsets;
-import java.sql.Time;
+
 import java.time.LocalDateTime;
 import java.util.*;
-import org.springframework.data.mongodb.core.query.Criteria;
 
 import static java.lang.Thread.sleep;
 

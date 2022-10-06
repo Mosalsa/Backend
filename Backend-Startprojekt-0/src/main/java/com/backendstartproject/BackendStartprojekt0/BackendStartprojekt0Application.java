@@ -1,29 +1,11 @@
 package com.backendstartproject.BackendStartprojekt0;
 
-import com.backendstartproject.BackendStartprojekt0.controller.UserController;
-import com.backendstartproject.BackendStartprojekt0.model.Location;
-import com.backendstartproject.BackendStartprojekt0.model.Product;
-import com.backendstartproject.BackendStartprojekt0.model.Role;
-import com.backendstartproject.BackendStartprojekt0.model.User;
-import com.backendstartproject.BackendStartprojekt0.repository.ProductRepository;
-import com.backendstartproject.BackendStartprojekt0.service.ProductService;
-import com.backendstartproject.BackendStartprojekt0.service.UserService;
-import configuration.BeanConfig;
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Bean;
-import org.springframework.data.mongodb.core.MongoTemplate;
-import org.springframework.data.mongodb.core.query.Criteria;
-import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
-import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.List;
 
 @SpringBootApplication
 public class BackendStartprojekt0Application {

@@ -6,37 +6,22 @@ import com.backendstartproject.BackendStartprojekt0.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
-import io.opentracing.Scope;
-import io.opentracing.Span;
-import io.opentracing.Tracer;
+
 @RestController
 @RequiredArgsConstructor
 public class UserController {
     public static final Logger log= LoggerFactory.getLogger(UserController.class);
     private final UserService userService;
-    @Autowired
-    private Tracer tracer;
+
 
     @GetMapping("/helloworld")
     public String home(@PathVariable String name){
-        try(Scope scope = tracer.buildSpan("Hello world!").startActive(true)) {
-            Span span = scope.span();
-            span.log("this is a log message for name " + name);
-            String response = formatGreeting(name);
-            return response;
-        }
-    }
-    private String formatGreeting(String name) {
-        try (Scope scope = tracer.buildSpan("format-greeting").startActive(true)) {
-            Span span = scope.span();
-            span.log("formatting message locally for name " + name);
-            String response = "Hello " + name + "!";
-            return response;
-        }
+
+        return "Hello world!";
+
     }
     @PostMapping("/login")
     public String login(){

@@ -5,7 +5,6 @@ import com.backendstartproject.BackendStartprojekt0.model.User;
 
 
 import java.util.List;
-import java.util.Optional;
 
 public interface UserService {
 

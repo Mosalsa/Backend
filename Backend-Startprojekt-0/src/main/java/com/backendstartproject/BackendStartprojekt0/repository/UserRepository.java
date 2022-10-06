@@ -1,9 +1,7 @@
 package com.backendstartproject.BackendStartprojekt0.repository;
 
 import com.backendstartproject.BackendStartprojekt0.model.User;
-import org.springframework.context.annotation.Bean;
 import org.springframework.data.mongodb.repository.MongoRepository;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
 @Repository
