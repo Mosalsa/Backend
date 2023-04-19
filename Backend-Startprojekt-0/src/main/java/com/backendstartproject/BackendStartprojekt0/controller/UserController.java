@@ -20,7 +20,7 @@ public class UserController {
     @GetMapping("/helloworld")
     public String home(@PathVariable String name){
 
-        return "Hello world!";
+        return "this is a test controller ";
 
     }
     @PostMapping("/login")
